@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after,
+body {
+    box-sizing: border-box;
+    font-family: SUSE, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-size: min(max(1rem, 128px), 22px); */
+}
+
+body {
+    background: no-repeat linear-gradient(180deg, #f8b500 20%, #fceabb 80%);
+    height: 100%;
+}
+
+/* heights */
+.vh-10 {
+    height: 10vh;
+}
+
+.vh-30 {
+    height: 30vh;
+}
+
+.hero-section {
+    height: 20vh;
+    background-image: url("/media/sketches/hoe-het-werkt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+
+/*----*/
