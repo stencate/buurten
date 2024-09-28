@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "wagtail.search",
     "wagtail.admin",
     "wagtail",
+    "wagtail.locales",
     "modelcluster",
     "taggit",
     "django.contrib.admin",
@@ -61,6 +62,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
 ]
 
 ROOT_URLCONF = "buurten.urls"
@@ -138,11 +140,27 @@ LOGIN_REDIRECT_URL = "/"  # new
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Europe/Amsterdam"
 
 USE_I18N = True
-
+USE_L10N = True
+WAGTAIL_I18N_ENABLED = True
 USE_TZ = True
+
+# my_project/settings.py
+
+LANGUAGES = [
+    ("nl-NL", "Nederlands"),
+    ("en-GB", "English (Great Britain)"),
+    ("en-US", "English (United States)"),
+    # ('fr-FR', "French (France)"),
+]
+
+WAGTAIL_CONTENT_LANGUAGES = [
+    ("nl-NL", "Nederlands"),
+    ("en-GB", "English"),
+    # ('fr-FR', "French"),
+]
 
 
 # Static files (CSS, JavaScript, Images)

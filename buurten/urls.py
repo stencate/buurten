@@ -7,7 +7,7 @@ from wagtail import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
-
+from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
@@ -35,3 +35,10 @@ urlpatterns = urlpatterns + [
     # of your site, rather than the site root:
     #    path("pages/", include(wagtail_urls)),
 ]
+
+# Translatable URLs
+# These will be available under a language code prefix. For example /en/search/
+urlpatterns += i18n_patterns(
+    path('search/', search_views.search, name='search'),
+    path("", include(wagtail_urls)),
+)

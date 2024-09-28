@@ -11,6 +11,7 @@ body {
 
 body {
     background: no-repeat linear-gradient(180deg, #f8b500 20%, #fceabb 80%);
+    /* background: linear-gradient(180deg, #4682B4 20%, #99ccff 80%); */
     height: 100%;
 }
 
