@@ -8,13 +8,13 @@ from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
 from django.conf.urls.i18n import i18n_patterns
+
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
-
-    path('accounts/', include('allauth.urls')),
+    path("accounts/", include("allauth.urls")),
 ]
 
 
@@ -39,6 +39,7 @@ urlpatterns = urlpatterns + [
 # Translatable URLs
 # These will be available under a language code prefix. For example /en/search/
 urlpatterns += i18n_patterns(
-    path('search/', search_views.search, name='search'),
+    path("search/", search_views.search, name="search"),
     path("", include(wagtail_urls)),
+    prefix_default_language=False,
 )

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags}
+
+{% block body_class %}{% endblock %}
+
+{% block extra_css %}{% endblock extra_css %}
+
+{% block content %}
+<div class="center-grid">
+    <div class="section-grid">
+        {% include 'home/nav_bar.html' %}
+        {% include 'how_to/hhw_section.html' %}
+    </div>
+</div>
+{% endblock content %}

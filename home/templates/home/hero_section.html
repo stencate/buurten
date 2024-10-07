@@ -1,16 +1,18 @@
 {% load i18n wagtailcore_tags static %}
 
-<div class="container">
+<i class="fas fa-clock" style="font-size:120px;color:#2196F3"></i>
+<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i> 
+
+<div class="section-content-area">
     <div class="row">
-        <h1 class="display-1 text-center fw-bold" style="color: #000000a2;">{{ page.hero_title | richtext }}</h1>
+        <h1 class="text-center fw-bold display-2 pt-2" style="color: #000000a2;">{{ page.hero_title | richtext }}</h1>
     </div>
     <div class="row">
-        <div class="lead text-center display-3">{{ page.sub_title | richtext}}</div>
+        <div class="text-center display-5">{{ page.sub_title | richtext}}</div>
     </div>
     <div class="d-grid col-4 mx-auto pt-5">
-        <button class="btn btn-outline-dark fs-2 fw-medium" type="button">Plaats een Oproep</button>
+        <button class="btn btn-outline-dark fw-medium fs-3" type="button"><a href="#post-section"></a>plaats een Oproep</a></button>
     </div>
     <div class="d-grid mx-auto pt-5">
         <div class="hero-section"></div>
     </div>
-</div>

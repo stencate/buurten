@@ -1,0 +1,16 @@
+{% load i18n wagtailcore_tags static %}
+
+<div class="section-content-area">
+    <div class="row">
+        <h1 class="display-2 text-center fw-bold pt-2" style="color: #000000a2;">{{ page.hhw_titel | richtext }}</h1>
+    </div>
+    <div class="row">
+        <div news-paper-style="true" class="text-start p-5">{{ page.hhw_paragraaf | richtext}}</div>
+    </div>
+    <div class="d-grid col-4 mx-auto pt-5">
+        <button class="btn btn-outline-dark fs-3 fw-medium" type="button">Plaats een Oproep</button>
+    </div>
+    <div class="d-grid mx-auto pt-5">
+        <div class="hhw-section"></div>
+    </div>
+</div>

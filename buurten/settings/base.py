@@ -25,6 +25,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 INSTALLED_APPS = [
     "home",
+    "how_to",
     "custom_users",
     "custom_users.apps.CustomUsersAppConfig",
     "search",
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "allauth",
     "allauth.account",
+    "heroicons",
 ]
 
 MIDDLEWARE = [
@@ -138,7 +140,7 @@ LOGIN_REDIRECT_URL = "/"  # new
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "nl"
 
 TIME_ZONE = "Europe/Amsterdam"
 
@@ -159,6 +161,7 @@ LANGUAGES = [
 WAGTAIL_CONTENT_LANGUAGES = [
     ("nl-NL", "Nederlands"),
     ("en-GB", "English"),
+    ("en-US", "English"),
     # ('fr-FR', "French"),
 ]
 
