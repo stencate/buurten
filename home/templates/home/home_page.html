@@ -6,10 +6,20 @@
 {% block extra_css %}{% endblock extra_css %}
 
 {% block content %}
-<div class="center-grid">
+<!-- hero section -->
+<div class="container-fluid center-grid" id="home">
+
     <div class="section-grid">
         {% include 'home/nav_bar.html' %}
         {% include 'home/hero_section.html' %}
     </div>
+
 </div>
+<!-- Posts -->
+ <div class="container-fluid center-grid" id="posts">
+    <div class="section-grid">
+        {% include 'home/nav_bar.html' %}
+        {% include 'home/post_section.html' %}
+    </div>
+ </div>
 {% endblock content %}

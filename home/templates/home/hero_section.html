@@ -1,7 +1,5 @@
 {% load i18n wagtailcore_tags static %}
 
-<i class="fas fa-clock" style="font-size:120px;color:#2196F3"></i>
-<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i> 
 
 <div class="section-content-area">
     <div class="row">
@@ -11,8 +9,12 @@
         <div class="text-center display-5">{{ page.sub_title | richtext}}</div>
     </div>
     <div class="d-grid col-4 mx-auto pt-5">
-        <button class="btn btn-outline-dark fw-medium fs-3" type="button"><a href="#post-section"></a>plaats een Oproep</a></button>
+        <button class="btn btn-outline-dark fw-medium fs-3" type="button"><a class="nav-link active" href="#posts">Plaats een Oproep</a>
+        </button>
     </div>
     <div class="d-grid mx-auto pt-5">
         <div class="hero-section"></div>
     </div>
+</div>
+<div class="copy-right text-light"><i class="fa-regular fa-copyright"></i> dGM Producties</div>
+
